@@ -507,6 +507,12 @@
       padding: 0 0 calc(516 / 896 * 100%) 0;
     }
 
+    &.overlay-hidden {
+      &::after {
+        display: none;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -537,6 +543,10 @@
   width: 81px;
   height: 81px;
   transform: translate(-50%, -50%);
+
+  &_hidden {
+    display: none;
+  }
 }
 
 .product {

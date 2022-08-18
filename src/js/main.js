@@ -14,3 +14,13 @@ burger.addEventListener("click", (e) => {
     main.classList.toggle("_active");
   }
 });
+
+const playVideo = document.querySelector(".customer__video .video-play");
+const video = document.querySelector(".customer__video video");
+
+playVideo.addEventListener("click", () => {
+  video.play();
+  video.setAttribute("controls", "controls");
+  document.querySelector(".customer__video").classList.add("overlay-hidden");
+  playVideo.classList.add("video-play_hidden");
+});
