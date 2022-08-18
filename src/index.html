@@ -5,8 +5,11 @@
     <div class="site-container">
       <header class="header">
         <div class="container header__container">
-          <a href="" class="logo header__logo">
-            <img src="img/logo.svg" alt="logo" width="80" height="23" />
+          <a href="" class="logo logo_accent header__logo">
+            <!-- <img src="img/logo.svg" alt="logo" width="80" height="23" /> -->
+            <svg aria-hidden="true">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
           <div class="header__main">
             <nav class="nav header__nav">
@@ -36,7 +39,7 @@
         </div>
       </header>
       <main class="main">
-        <div class="hero">
+        <section class="hero">
           <div class="container hero__container">
             <div class="hero__content">
               <h1 class="hero__title">Be aware, Manage well.</h1>
@@ -53,12 +56,12 @@
               <img src="img/hero.jpg" alt="" aria-hidden="true" />
             </div>
           </div>
-        </div>
-        <div class="about">
+        </section>
+        <section class="about">
           <div class="container about__container">
             <div class="about__top">
               <div class="about__main">
-                <div class="about__subtitle">How it works</div>
+                <div class="about__subtitle subtitle">How it works</div>
                 <h2 class="about__title title title_accent">
                   Understand & Release the stress in 3 steps
                 </h2>
@@ -129,10 +132,121 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
+        <section class="customer">
+          <div class="container-fluid customer__container">
+            <div class="customer__content">
+              <h2 class="title customer__title">
+                Let's hear about Kayla's success story
+              </h2>
+              <div class="customer__text">
+                See how well Alivio works in a real customer’s life.
+              </div>
+              <button class="btn-reset btn">Let’s get started</button>
+            </div>
+            <div class="customer__video">
+              <video
+                src="/video/video.webm"
+                poster="/img/video-poster.jpg"
+                muted
+                preload="metadata"
+                playsinline
+                width="896"
+                height="516"
+              ></video>
+              <button class="btn-reset video-play" aria-label="play video">
+                <svg
+                  viewBox="0 0 82 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41.3715 0.407043C19.0808 0.407043 0.948334 18.5413 0.948334 40.8302C0.948334 63.1192 19.0808 81.2534 41.3715 81.2534C63.6622 81.2534 81.7947 63.1192 81.7947 40.8302C81.7947 18.5413 63.6622 0.407043 41.3715 0.407043ZM41.3715 77.8849C20.9395 77.8849 4.31688 61.2623 4.31688 40.8302C4.31688 20.3982 20.9395 3.77559 41.3715 3.77559C61.8036 3.77559 78.4262 20.3982 78.4262 40.8302C78.4262 61.2623 61.8036 77.8849 41.3715 77.8849Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M57.4419 39.414L33.8618 24.2553C33.3453 23.9182 32.6775 23.9 32.1446 24.1928C31.6017 24.4889 31.2662 25.0548 31.2662 25.6715V55.9889C31.2662 56.6057 31.6017 57.1716 32.1446 57.4677C32.3946 57.6043 32.6742 57.6733 32.9505 57.6733C33.2663 57.6733 33.5855 57.5844 33.8618 57.4052L57.4419 42.2465C57.9223 41.9373 58.215 41.4026 58.215 40.8302C58.215 40.2578 57.9223 39.7233 57.4419 39.414ZM34.6347 52.9032V28.7573L53.4154 40.8302L34.6347 52.9032Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="product">
+          <div class="container product__container">
+            <div class="product__wrapper">
+              <div class="product__image">
+                <img
+                  src="img/product-1.jpg"
+                  alt="Mikayla"
+                  width="639"
+                  height="573"
+                />
+              </div>
+              <div class="product__card product-card">
+                <div class="product-card__title">Customized For</div>
+                <div class="product-card__human">
+                  <div class="product-card__image">
+                    <img
+                      src="img/product-mini-1.jpg"
+                      alt="Mikayla"
+                      width="57"
+                      height="57"
+                    />
+                  </div>
+                  <div class="product-card__name">Mikayla</div>
+                </div>
+                <div class="product-card__text">Your custom contents</div>
+                <ul class="product-card__list list-reset">
+                  <li class="product-card__item">Understand Your Stress</li>
+                  <li class="product-card__item">Anger Management</li>
+                </ul>
+              </div>
+            </div>
+            <div class="product__content">
+              <div class="product__subtitle subtitle">Our product</div>
+              <h2 class="product__title title title_accent">
+                You tell us your stress, We make your diary
+              </h2>
+              <div class="product__text">
+                <p>
+                  Everyone experiences it, and in different ways. Let Alivio
+                  guide you, in a personalized journal experience, to overcome
+                  your stress.
+                </p>
+              </div>
+              <button class="btn btn-reset product__btn">Find Your Way</button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="container footer__container">
+            <a href="" class="logo footer__logo">
+              <svg aria-hidden="true">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="nav footer__nav">
+              <ul class="nav__list list-reset">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Why Alivio</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Solutions</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Community</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
